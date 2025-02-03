@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> CV Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Your Information</h2>
+    <div class="form-container">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="workExp">Work Experience:</label>
+        <textarea id="workExp" placeholder=""></textarea>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" placeholder="" />
+      </div>
+      <button onclick="generateCV()">Sumbit informartion</button>
+    </div>
+
+    <div id="cv-container" class="cv-container">
+      <div class="cv-body">
+        <h3>Contact Details</h3>
+        <p><strong>Name:</strong> <span id="cv-name"></span></p>
+        <p><strong>Job Title:</strong> <span id="cv-jobTitle"></span></p>
+        <p><strong>Email:</strong> <span id="cv-email"></span></p>
+        <p><strong>Phone:</strong> <span id="cv-phone"></span></p>
+        <p><strong>City:</strong> <span id="cv-city"></span></p>
+        <h3>Work Experience</h3>
+        <p id="cv-workExp"></p>
+        <h3>Skills</h3>
+        <p id="cv-skills"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
